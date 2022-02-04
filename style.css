@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{font-size: 62.5%;}
+.main-container{
+    height: 100vh;
+    min-width: 100vw;
+    font-size: 1.4rem;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(rgb(204, 150, 182), rgb(207, 53, 61));
+}
+.music_name{font-family: 'Mochiy Pop P One', sans-serif; margin-top: 3rem;}
+.singer_name{
+    font-family: 'Shadows Into Light';
+    font-size: 2.5rem;
+}
+.item-container{
+    box-shadow: 0 0 1.5rem 0.4rem rgb(75, 15, 15);
+    background-color: rgb(238, 234, 234);
+    height: 62vh;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.singer_name{margin-top: 2.5rem;}
+.img_style{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-top: 2.6rem;
+    box-shadow: 0 0 1.5rem 0.2rem rgb(138, 65, 65);
+}
+.btn-container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+}
+.arrow:hover{
+    color: rgb(170, 32, 32);
+    cursor: pointer;
+}
+.arrow_1:hover{
+    transform: translateX(-1rem);
+    transition: all 1s;
+}
+.arrow_2:hover{
+    transform: translateX(1rem);
+    transition: all 1s;
+}
+.playpause_btn:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.playpause_btn{
+    height: 3rem;}
+.rotateby360{
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
